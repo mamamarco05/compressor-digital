@@ -14,6 +14,6 @@
 /* functions */
 
 void Switch::switch.init(int iPin){
-    pinMode(iPin, INPUT);
+    pinMode(iPin, INPUT_PULLUP);
     _iPin = iPin;    
 }

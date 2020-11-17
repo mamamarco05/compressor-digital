@@ -8,6 +8,25 @@
 /* *********************************************************************** */
 
 /* includes */
+#include "Arduino.h"
 #include "Led.h"
 
-// Tuzão gayzão
+void Led::led_init(int iPin){    
+    pinMode(iPin, OUTPUT);
+    _iPin = iPin;
+}
+
+void Led::led_set(bool bStatus)
+{
+    if(bStatus)
+    {
+        digitalWrite(_iPin, HIGH);
+    }
+    else
+    {
+        digitalWrite(_iPin, LOW);
+    }
+       
+}
+
+

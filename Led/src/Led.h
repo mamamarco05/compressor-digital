@@ -11,6 +11,7 @@
 #define _LED_H
 
 /* includes */
+#include "Arduino.h"
 
 /* definitions */
 
@@ -30,16 +31,14 @@ class Led
         /* ************************************************ */
         /* Method name:        led_set                      */
         /* Method description: Set status of specified LED  */
-        /* Input params:       ucStatus                     */
+        /* Input params:       bStatus                     */
         /* Output params:      n/a                          */
         /* ************************************************ */
         void led_set(bool bStatus);
 
         private:
 
-        int _iPin;
-        //comentario
-        //oi tu
+        int _iPin;        
 };
 
 #endif //_LED_H

@@ -8,4 +8,12 @@
 /* *********************************************************************** */
 
 /* includes */
+#include "Arduino.h"
 #include "Switch.h"
+
+/* functions */
+
+void Switch::switch.init(int iPin){
+    pinMode(iPin, INPUT);
+    _iPin = iPin;    
+}

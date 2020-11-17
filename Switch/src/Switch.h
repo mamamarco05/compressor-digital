@@ -11,13 +11,14 @@
 #define _SWITCH_H
 
 /* includes */
-
+#include "Arduino.h"
 /* definitions */
 
 /* class */
 class Switch
 {
     private:
+        int _iPin;
 
     public:
         /* ************************************************** */
@@ -35,6 +36,6 @@ class Switch
         /* Output params:      ucStatus                       */
         /* ************************************************** */
         unsigned char switch_get(int iPin);
-}
+};
 
-#endif //_SIWTCH_H
+#endif //_SWITCH_H

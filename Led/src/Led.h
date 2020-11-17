@@ -33,11 +33,12 @@ class Led
         /* Input params:       ucStatus                     */
         /* Output params:      n/a                          */
         /* ************************************************ */
-        void led_set(bool ucStatus);
+        void led_set(bool bStatus);
 
         private:
 
         int _iPin;
+        //comentario
 };
 
 #endif //_LED_H

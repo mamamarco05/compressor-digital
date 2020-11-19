@@ -12,51 +12,35 @@
 
 /* functions */
 
-void Switch::switch.init(int iPin, int nButton, int sButton){
+Switch::Switch(int iPin, int nButton, int sButton){
     pinMode(iPin, INPUT_PULLUP);
     _iPin = iPin;    
     _nButton = nButton;
     _sButton = sButton;
 }
 
-int Switch::switch.getStatus(){
-    return _nButton;
-}
-
-int Switch::switch.getPin(){
-    return _iPin;
-}
-
-int Switch::switch.getStatus(){
-    return _sButton;
-}
-
-void Switch::switch.setStatus( int sButton){
-    _sButton = sButton;
-}
-
-void Switch::switch.read(){
+void switch_read(){
 
     while(true){
-        if (digitalRead(button1.getPin())){
-            button1.setStatus(ON);
+        if (digitalRead(button1._iPin)){
+            button1._sButton = ON;
         }
-        else if (!(digitalRead(button1.getPin()))){
-            button1.setStatus(OFF);
+        else if (!digitalRead(button1._iPin)){
+            button1._sButton = OFF;
         }
-        if (digitalRead(button2.getPin())){
-            button1.setStatus(ON);
+        else if (digitalRead(button2._iPin)){
+            button1._sButton = ON;
         }
-        else if (!(digitalRead(button2.getPin()))){
-            button1.setStatus(OFF);
+        else if (!digitalRead(button2._iPin)){
+            button1._sButton = OFF;
         }
-        if (digitalRead(button3.getPin())){
-            button1.setStatus(ON);
+        else if (digitalRead(button3._iPin)){
+            button1._sButton = ON;
         }
-        else if (!(digitalRead(button3.getPin()))){
-            button1.setStatus(OFF);
+        else if (!digitalRead(button3._iPin)){
+            button1._sButton = OFF;
         }
-            delay(10);
+        delay(10);
 
     }
 

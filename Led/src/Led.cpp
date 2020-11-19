@@ -31,3 +31,13 @@ void Led::led_set(bool bStatus)
 }
 
 
+void teste_led(){
+    while(true){
+        if (button1.sButton = ON or button2.sButton = ON or button3.sButton = ON){
+            led1.led_set(true);
+        }
+        else led1.led_set(false);
+    }
+
+
+}

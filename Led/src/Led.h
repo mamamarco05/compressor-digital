@@ -36,7 +36,6 @@ class Led
         /* ************************************************ */
         void led_set(bool bStatus);
 
-    private:
         int _iPin;        
 };
 

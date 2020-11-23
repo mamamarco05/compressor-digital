@@ -13,7 +13,7 @@
 /* functions */
 
 Switch::Switch(int iPin, int nButton, int sButton){
-    pinMode(iPin, INPUT_PULLUP);
+    pinMode(iPin, INPUT);
     _iPin = iPin;    
     _nButton = nButton;
     _sButton = sButton;

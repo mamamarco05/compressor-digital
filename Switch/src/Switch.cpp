@@ -29,16 +29,16 @@ void switch_read(){
             button1._sButton = OFF;
         }
         else if (digitalRead(button2._iPin)){
-            button1._sButton = ON;
+            button2._sButton = ON;
         }
         else if (!digitalRead(button2._iPin)){
-            button1._sButton = OFF;
+            button2._sButton = OFF;
         }
         else if (digitalRead(button3._iPin)){
-            button1._sButton = ON;
+            button3._sButton = ON;
         }
         else if (!digitalRead(button3._iPin)){
-            button1._sButton = OFF;
+            button3._sButton = OFF;
         }
         delay(10);
 

@@ -23,7 +23,7 @@
 /* Output params:      n/a                            */
 /* ************************************************** */
 static void read_file (const char * fname);
-
+ 
 
 /* ************************************************** */
 /* Method name:        compress_vert                    */

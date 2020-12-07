@@ -29,7 +29,7 @@ static void read_file (const char * fname)
 
 	puts ("") ;
 
-	
+
 } 
 
 static void compress_vert(double *data, double *threshold, double *ratio, double *gain){
@@ -43,7 +43,7 @@ static void compress_vert(double *data, double *threshold, double *ratio, double
         data_db = (*threshold - data_db)*(*ratio) + data_db;
 
     }
-    
+
     *data = (*gain) * data_db;
 
 }

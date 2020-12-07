@@ -14,7 +14,7 @@
 #define OFF							0
 
 /* includes */
-#include ">Arduino.h"
+#include "Arduino.h"
 #include <Wire.h>
 /* definitions */
 
@@ -37,14 +37,6 @@ class Switch
 
 };
 
-/* ************************************************** */
-/* Method name:        switch_read                    */
-/* Method description: Ongoing task that reads buttons 
-                        and alters buttons' status. Buttons need to be 
-                        instanced objects in main whose names are defined in this function */
-/* Input params:       &nButton (address)                     */
-/* Output params:      None                        */
-/* ************************************************** */
-void switch_read( void * pvParameters );
+
 
 #endif //_SWITCH_H

@@ -10,24 +10,25 @@
 
 #include "Compressor.h"
 #include <math.h>
+#include <stdlib.h>
 
-#define		BUFFER_LEN		1024 //buffer size/maximum audio file size 
+#define		BUFFER_LEN		500000 //buffer size/maximum audio file size 
 
 
 static void read_file (const char * fname)
 {	static short buffer [BUFFER_LEN] ;
 
-	SndfileHandle file ;
+	// SndfileHandle file ;
 
-	file = SndfileHandle (fname) ;
+	// file = SndfileHandle (fname) ;
 
-	printf ("Opened file '%s'\n", fname) ;
-	printf ("    Sample rate : %d\n", file.samplerate ()) ;
-	printf ("    Channels    : %d\n", file.channels ()) ;
+	// printf ("Opened file '%s'\n", fname) ;
+	// printf ("    Sample rate : %d\n", file.samplerate ()) ;
+	// printf ("    Channels    : %d\n", file.channels ()) ;
 
-	file.read (buffer, BUFFER_LEN) ;
+	// file.read (buffer, BUFFER_LEN) ;
 
-	puts ("") ;
+	// puts ("") ;
 
 
 } 
@@ -38,11 +39,11 @@ static void compress_vert(double *data, double *threshold, double *ratio, double
 
     data_db = 20 * log10(abs(*data)); //db FS
 
-    if (data_db > (*threshold)){
+    // if (data_db > (*threshold)){
 
-        data_db = (*threshold - data_db)*(*ratio) + data_db;
+    //     data_db = (*threshold - data_db)*(*ratio) + data_db;
 
-    }
+    // }
 
     *data = (*gain) * data_db;
 

@@ -10,9 +10,8 @@
 #ifndef _SWITCH_H
 #define _SWITCH_H
 
-#include	<cstdio>
-#include	<cstring>
-#include	<sndfile.hh>
+
+#include	"sndfile.h"
 
 
 
@@ -31,6 +30,6 @@ static void read_file (const char * fname);
 /* Input params:       double *data, double *threshold, double *ratio, double *gain         */
 /* Output params:      n/a                            */
 /* ************************************************** */
-static void compress_vert(double *data, double *threshold, double *ratio, double *gain);
+static void compress_vert (double *data, double *threshold, double *ratio, double *gain);
 
 #endif //_SWITCH_H

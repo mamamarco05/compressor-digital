@@ -14,7 +14,7 @@
 #define OFF							0
 
 /* includes */
-#include ">Arduino.h"
+#include "Arduino.h"
 #include <Wire.h>
 /* definitions */
 

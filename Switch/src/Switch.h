@@ -35,16 +35,26 @@ class Switch
         /* ************************************************** */
         Switch(int iPin, int nButton, int sButton);
 
+        /* ************************************************** */
+        /* Method name:        switch_read                    */
+        /* Method description: Ongoing task that reads buttons 
+                                and alters buttons' status. Buttons need to be 
+                                instanced objects in main whose names are defined in this function */
+        /* Input params:       &nButton (address)                     */
+        /* Output params:      None                        */
+        /* ************************************************** */
+        void switch_read( void * pvParameters );
 };
 
+
+
 /* ************************************************** */
-/* Method name:        switch_read                    */
-/* Method description: Ongoing task that reads buttons 
-                        and alters buttons' status. Buttons need to be 
-                        instanced objects in main whose names are defined in this function */
-/* Input params:       &nButton (address)                     */
-/* Output params:      None                        */
+/* Method name:        state_machine                  */
+/* Method description: Implements state-machine       */
+/* Input params:       n/a                            */
+/* Output params:      n/a                            */
 /* ************************************************** */
-void switch_read( void * pvParameters );
+void state_machine( void * pvParameters );
+
 
 #endif //_SWITCH_H

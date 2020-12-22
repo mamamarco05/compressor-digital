@@ -18,3 +18,7 @@ Switch::Switch(int iPin, int nButton, int sButton){
     _nButton = nButton;
     _sButton = sButton;
 }
+
+void Switch::switch_read( void * pvParameters ){
+    digitalRead(_iPin);
+}
